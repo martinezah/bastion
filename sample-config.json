@@ -1,0 +1,16 @@
+{
+    "credentials" : {
+        "AWS_ACCESS_KEY_ID"     : "",
+        "AWS_SECRET_ACCESS_KEY" : ""        
+    },
+    "schemes" : {
+        "minimal"   : { "snapshots" : { "period" : 24, "retain" : 1 } },
+        "basic"     : { "snapshots" : { "period" : 24, "retain" : 1 }, "archives" : { "daily" : 6 } },
+        "extended"  : { "snapshots" : { "period" : 24, "retain" : 1 }, "archives" : { "daily" : 6, "weekly" : 4 } },
+        "critical"  : { "snapshots" : { "period" :  4, "retain" : 6 }, "archives" : { "daily" : 6, "weekly" : 4 } }
+    },
+    "instances" : {
+        "prod-cl-1"     : "basic",
+        "ops-syslog-1"  : "minimal",
+    }
+}
