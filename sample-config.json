@@ -11,6 +11,6 @@
     },
     "instances" : {
         "prod-cl-1"     : "basic",
-        "ops-syslog-1"  : "minimal",
+        "ops-syslog-1"  : "minimal"
     }
 }
