@@ -19,6 +19,5 @@ bastion.py config.json
 
 My primary deployment, via puppet, looks like this:
 
-# Puppet Name: AWS Backups
 5 * * * * /bin/bash -c 'cd /opt/bastion ; ./bastion.py config.json' >> /var/log/bastion.log
 
