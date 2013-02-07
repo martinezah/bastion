@@ -16,8 +16,8 @@ def backup(vol, sys, scheme):
         weekly = scheme["retention"]["weekly"]
         daily  = scheme["retention"]["daily"]
         hourly = scheme["retention"]["hourly"]
-        for snap in snap_list:
-            when = datetime.strptime(snap.start_time, "%Y-%m-%dT%H:%M:%S.%fZ")
+        for snap in snap_list[1:]:
+            when = datetime.strptime(snap.description.split("_")[2], "%Y-%m-%dT%H:%M:%S.%f")
             if (when.weekday() == 0):
                 if (weekly > 0):
                     weekly -= 1
