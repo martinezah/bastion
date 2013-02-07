@@ -4,13 +4,13 @@
         "AWS_SECRET_ACCESS_KEY" : ""        
     },
     "schemes" : {
-        "minimal"   : { "period" : 24, "retention" : { "hourly" : 0, "daily" : 1, "weekly" : 0 } }
-        "basic"     : { "period" : 24, "retention" : { "hourly" : 0, "daily" : 6, "weekly" : 0 } }
-        "extended"  : { "period" : 24, "retention" : { "hourly" : 0, "daily" : 6, "weekly" : 4 } }
+        "minimal"   : { "period" : 24, "retention" : { "hourly" : 0, "daily" : 1, "weekly" : 0 } },
+        "basic"     : { "period" : 24, "retention" : { "hourly" : 0, "daily" : 6, "weekly" : 0 } },
+        "extended"  : { "period" : 24, "retention" : { "hourly" : 0, "daily" : 6, "weekly" : 4 } },
         "critical"  : { "period" :  4, "retention" : { "hourly" : 6, "daily" : 6, "weekly" : 4 } }
     },
     "instances" : {
         "ops-syslog-1"      : "basic",
-        "ops-graphite-1"    : "basic",
+        "ops-graphite-1"    : "basic"
     }
 }
