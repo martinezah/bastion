@@ -17,7 +17,7 @@ Bastion is designed to be run as an hourly cron job.  The minimal invocation syn
 
 bastion.py config.json
 
-My primary deployment, via puppet, looks like this:
+A sample crontab entry might look something like this:
 
 5 * * * * /bin/bash -c 'cd /opt/bastion ; ./bastion.py config.json' >> /var/log/bastion.log
 
