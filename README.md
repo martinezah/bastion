@@ -3,7 +3,7 @@ bastion
 
 EC2 Rotating Backup Framework
 
-Bastion is a simple framework for automating backup rotations of EC2 volumes. It allows your to specify multiple backup rotation schemes, and apply those to the servers in your infrastructure. A cron job manages the creation of new snapshots as well as retention and purging of older snapshots.
+Bastion is a simple framework for automating backup rotations of EC2 volumes. It allows you to specify multiple backup rotation schemes, and apply those to the servers in your infrastructure. A cron job manages the creation of new snapshots as well as retention and purging of older snapshots.
 
 Configuration
 -------
